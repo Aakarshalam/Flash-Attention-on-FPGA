@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Give_me_Attention.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" \
+"../../../../Give_me_Attention.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+
+sv xil_defaultlib  \
+"../../../../Give_me_Attention.srcs/sources_1/new/exp_imp_v2.sv" \
+"../../../../Give_me_Attention.srcs/sources_1/new/l_tile.sv" \
+"../../../../Give_me_Attention.srcs/sources_1/new/m_global.sv" \
+"../../../../Give_me_Attention.srcs/sources_1/new/phase_2.sv" \
+"../../../../Give_me_Attention.srcs/sim_1/new/tb_phase2.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

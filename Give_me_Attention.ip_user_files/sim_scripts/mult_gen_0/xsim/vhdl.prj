@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../Give_me_Attention.gen/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd" \
+
+# Do not sort compile order
+nosort

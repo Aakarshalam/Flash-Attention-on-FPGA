@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Give_me_Attention/Give_me_Attention.srcs/sources_1/new/exp_imp_v2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_imp_v2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Give_me_Attention/Give_me_Attention.srcs/sources_1/new/l_tile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module l_tile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Give_me_Attention/Give_me_Attention.srcs/sources_1/new/m_global.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m_global
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Give_me_Attention/Give_me_Attention.srcs/sources_1/new/phase_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module phase_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Give_me_Attention/Give_me_Attention.srcs/sim_1/new/tb_phase2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_phase2
