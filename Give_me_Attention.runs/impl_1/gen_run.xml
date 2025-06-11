@@ -1,48 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1748859256">
-  <File Type="ROUTE-PWR" Name="phase_2_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="phase_2.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="phase_2_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="phase_2_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="phase_2.msk"/>
-  <File Type="ROUTE-CLK" Name="phase_2_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="phase_2.vdi"/>
-  <File Type="ROUTE-BUS-SKEW" Name="phase_2_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="phase_2.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="phase_2_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="phase_2.bit"/>
-  <File Type="BG-DRC" Name="phase_2.drc"/>
-  <File Type="BG-BGN" Name="phase_2.bgn"/>
-  <File Type="BG-BIN" Name="phase_2.bin"/>
-  <File Type="BITSTR-RBT" Name="phase_2.rbt"/>
-  <File Type="BITSTR-NKY" Name="phase_2.nky"/>
-  <File Type="BITSTR-BMM" Name="phase_2_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="phase_2_power_summary_routed.pb"/>
   <File Type="BITSTR-MMI" Name="phase_2.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="phase_2.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="phase_2.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="phase_2_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="phase_2.hwdef"/>
-  <File Type="PLACE-IO" Name="phase_2_io_placed.rpt"/>
+  <File Type="BG-DRC" Name="phase_2.drc"/>
+  <File Type="ROUTE-STATUS-PB" Name="phase_2_route_status.pb"/>
+  <File Type="BG-BGN" Name="phase_2.bgn"/>
   <File Type="PLACE-UTIL" Name="phase_2_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="phase_2_utilization_placed.pb"/>
+  <File Type="PLACE-IO" Name="phase_2_io_placed.rpt"/>
+  <File Type="BG-BIN" Name="phase_2.bin"/>
   <File Type="PLACE-CTRL" Name="phase_2_control_sets_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="phase_2_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DRC" Name="phase_2_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="phase_2_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="phase_2_power_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="phase_2.msk"/>
+  <File Type="BITSTR-RBT" Name="phase_2.rbt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="phase_2_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="phase_2_timing_summary_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="phase_2_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="phase_2_route_status.pb"/>
+  <File Type="PA-TCL" Name="phase_2.tcl"/>
+  <File Type="ROUTE-PWR" Name="phase_2_power_routed.rpt"/>
+  <File Type="ROUTE-DRC" Name="phase_2_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="phase_2_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="phase_2_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="phase_2.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="phase_2_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="phase_2_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="phase_2.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="phase_2_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-SIMILARITY" Name="phase_2_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="phase_2.vdi"/>
+  <File Type="ROUTE-CLK" Name="phase_2_clock_utilization_routed.rpt"/>
+  <File Type="PA-DCP" Name="phase_2.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="phase_2_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="phase_2_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="phase_2_bus_skew_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="phase_2_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="phase_2_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="phase_2_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="phase_2_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="phase_2_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="phase_2.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="phase_2_bus_skew_postroute_physopted.pb"/>
+  <File Type="BITSTR-NKY" Name="phase_2.nky"/>
+  <File Type="BITSTR-BMM" Name="phase_2_bd.bmm"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="phase_2.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="phase_2_incremental_reuse_pre_placed.rpt"/>
   <File Type="ROUTE-DCP" Name="phase_2_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="phase_2_routed_error.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="phase_2_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="phase_2_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="phase_2_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="phase_2_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="phase_2_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="phase_2_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="phase_2_bus_skew_routed.rpx"/>
   <File Type="OPT-DCP" Name="phase_2_opt.dcp"/>
   <File Type="PLACE-DCP" Name="phase_2_placed.dcp"/>
   <File Type="PWROPT-DCP" Name="phase_2_pwropt.dcp"/>
@@ -50,15 +59,6 @@
   <File Type="PHYSOPT-DCP" Name="phase_2_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="phase_2_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="phase_2_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="phase_2_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="phase_2_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="phase_2_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="phase_2_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="phase_2_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="phase_2_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="phase_2_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="phase_2_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="phase_2_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="phase_2.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="phase_2_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="phase_2_pld.pdi"/>

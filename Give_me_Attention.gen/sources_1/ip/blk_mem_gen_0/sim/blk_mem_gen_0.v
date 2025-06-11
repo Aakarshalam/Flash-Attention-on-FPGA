@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:blk_mem_gen:8.4
-// IP Revision: 7
+// IP Revision: 9
 
 `timescale 1ns/1ps
 
@@ -61,16 +61,17 @@ module blk_mem_gen_0 (
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA CLK" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME BRAM_PORTA, MEM_ADDRESS_MODE BYTE_ADDRESS, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_LATENCY 1" *)
 input wire clka;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA EN" *)
 input wire ena;
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA ADDR" *)
 input wire [2 : 0] addra;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME BRAM_PORTA, MEM_SIZE 8192, MEM_WIDTH 32, MEM_ECC NONE, MASTER_TYPE OTHER, READ_LATENCY 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:bram:1.0 BRAM_PORTA DOUT" *)
 output wire [127 : 0] douta;
 
-  blk_mem_gen_v8_4_7 #(
+  blk_mem_gen_v8_4_9 #(
     .C_FAMILY("zynq"),
     .C_XDEVICEFAMILY("zynq"),
     .C_ELABORATION_DIR("./"),
@@ -150,7 +151,7 @@ output wire [127 : 0] douta;
     .clka(clka),
     .rsta(1'D0),
     .ena(ena),
-    .regcea(1'D0),
+    .regcea(1'D1),
     .wea(1'B0),
     .addra(addra),
     .dina(128'B0),
@@ -158,7 +159,7 @@ output wire [127 : 0] douta;
     .clkb(1'D0),
     .rstb(1'D0),
     .enb(1'D0),
-    .regceb(1'D0),
+    .regceb(1'D1),
     .web(1'B0),
     .addrb(3'B0),
     .dinb(128'B0),

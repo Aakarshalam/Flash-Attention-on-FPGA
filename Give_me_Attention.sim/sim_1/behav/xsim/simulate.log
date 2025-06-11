@@ -1,8 +1,0 @@
-Time resolution is 1 ps
- Block Memory Generator module loading initial data...
- Block Memory Generator data initialization complete.
-Block Memory Generator module tb_phase2.dut.mem1.bram_1.inst.\native_mem_module.blk_mem_gen_v8_4_7_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
- Block Memory Generator module loading initial data...
- Block Memory Generator data initialization complete.
-Block Memory Generator module tb_phase2.dut.sum.bram_2.inst.\native_mem_module.blk_mem_gen_v8_4_7_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
-$stop called at time : 24 ns : File "D:/Give_me_Attention/Give_me_Attention.srcs/sim_1/new/tb_phase2.sv" Line 33
