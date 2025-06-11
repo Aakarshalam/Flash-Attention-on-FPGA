@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module phase_2 #(
+ module phase_2 #(
     parameter int DATA_WIDTH = 16,
     parameter int br = 8,
     parameter int f = 3  
