@@ -1,36 +1,36 @@
 `timescale 1ns / 1ps
 
-module phase_2_new #(parameter int dataw = 16, parameter int br = 4, parameter int f = 3)
+module phase_2_new #(parameter int dataw = 16, parameter int br = 2, parameter int f = 3)
 (input logic clk, input logic inp_valid, 
 output logic o_valid, 
 //output logic valid_1,
 //output logic exp_valid, 
 // output logic [dataw-1:0] l_final [0:br-1],
-output logic [31:0] exp_1 [0:br-1],
-output logic [31:0] exp_2 [0:br-1],
-output logic [31:0] diff_1 [0:br-1],
-output logic [31:0] diff_2 [0:br-1],
-output logic [dataw-1:0] max_global [0:br-1],
-output logic [dataw-1:0] max_global_wire_array_prev [0:br-1],
-output logic [dataw-1:0] max_global_prev  [0:br-1],
-output logic [dataw-1:0] l_tile_wire_array [0:br-1],
+//output logic [31:0] exp_1 [0:br-1],
+//output logic [31:0] exp_2 [0:br-1],
+//output logic [31:0] diff_1 [0:br-1],
+//output logic [31:0] diff_2 [0:br-1],
+//output logic [dataw-1:0] max_global [0:br-1],
+//output logic [dataw-1:0] max_global_wire_array_prev [0:br-1],
+//output logic [dataw-1:0] max_global_prev  [0:br-1],
+//output logic [dataw-1:0] l_tile_wire_array [0:br-1],
 output logic [dataw-1:0] l_final_value_1 [0:br-1]
 //output logic [dataw-1:0] l_final_value_2 [0:br-1]
      );
 
-//logic [2*dataw-1:0] exp_1 [0:br-1];
+logic [2*dataw-1:0] exp_1 [0:br-1];
 logic [2*dataw-1:0] exp_1_d1 [0:br-1];
 logic [2*dataw-1:0] exp_1_d2 [0:br-1];
 logic [2*dataw-1:0] exp_1_d3 [0:br-1];
 logic [2*dataw-1:0] exp_1_d4 [0:br-1];
-//logic [2*dataw-1:0] exp_2 [0:br-1];
+logic [2*dataw-1:0] exp_2 [0:br-1];
 //logic o_valid;   
-//logic [dataw-1:0] max_global [0:br-1];
-//logic [dataw-1:0] max_global_prev [0:br-1];
+logic [dataw-1:0] max_global [0:br-1];
+logic [dataw-1:0] max_global_prev [0:br-1];
 logic [dataw-1:0] l_global [0:br-1];
 
-//logic [dataw-1:0] diff_1 [0:br-1];
-//logic [dataw-1:0] diff_2 [0:br-1];
+logic [dataw-1:0] diff_1 [0:br-1];
+logic [dataw-1:0] diff_2 [0:br-1];
 logic o_valid_1 [0:br-1];
 logic o_valid_2 [0:br-1];
 logic count = 0;
@@ -41,13 +41,14 @@ logic [f-1:0] addr_1 = 0;
 
 logic valid_1,valid_2,valid_3, valid_4, valid_5, valid_6, valid_7, valid_8,valid_9; // Register to move from one stage to another - best approach for pipelining.
 logic valid_10, valid_11, valid_12, valid_13, valid_14;
+logic o_valid_3, o_valid_4, o_valid_5;
 
 m_global mem01(.clk(clk), .addr(addr), .m_valid(inp_valid), .m_global_out(max_global_wire));
 l_tile sum(.clk(clk), .addr(addr_1),.l_valid(valid_7), .l_tile_out(l_tile_wire));
 
 logic [dataw-1:0] max_global_wire_array [0:br-1];
-//logic [dataw-1:0] max_global_wire_array_prev [0:br-1];
-//logic [dataw-1:0] l_tile_wire_array [0:br-1];
+logic [dataw-1:0] max_global_wire_array_prev [0:br-1];
+logic [dataw-1:0] l_tile_wire_array [0:br-1];
 //logic [dataw-1:0] l_final_value_1 [0:br-1];
 logic [dataw-1:0] l_final_value_1_d1 [0:br-1];
 logic [dataw-1:0] l_final_value_1_d2 [0:br-1];
@@ -177,7 +178,9 @@ always_ff @(posedge clk) begin
             l_final_value_1_d2[i] <= l_final_value_1_d1[i];
             l_final_value_1_d3[i] <= l_final_value_1_d2[i];
         end
-    
+    o_valid_3 <= o_valid_1[0];
+    o_valid_4 <= o_valid_3;
+    o_valid <= o_valid_4;
     
 end 
      
