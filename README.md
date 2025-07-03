@@ -5,7 +5,7 @@
 
 # 🛠 Overview
 
-This project is currently under development. The goal is to provide Reconfigurable Flash Attention FPGA Design (Targeting Zynq SoC and Alveo accelerator cards). More information and functionality will be added soon.
+This project is currently under development. The goal is to provide Reconfigurable FlashAttention FPGA Design (Targeting Zynq SoC and Alveo accelerator cards) for Attention step in Transformers. More information and functionality will be added soon.
 
 Stay tuned for updates!
 
